@@ -1,8 +1,9 @@
 import { Issue, IssueDetail } from '@/types/issue';
 import { client } from '.';
+import { PER_PAGE, SORT } from '@/constants/issue';
 
 export const getIssues = async (params: { page: number }) => {
-  const paramsWithOptions = { ...params, sort: 'comments', per_page: 30 };
+  const paramsWithOptions = { ...params, sort: SORT, per_page: PER_PAGE };
   const { data } = await client.get<Issue[]>('issues', {
     params: paramsWithOptions,
   });
