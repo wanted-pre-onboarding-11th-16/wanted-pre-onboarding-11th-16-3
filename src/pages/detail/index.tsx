@@ -52,32 +52,42 @@ const DetailPage = () => {
 export default DetailPage;
 
 const Container = styled.div`
-  box-sizing: border-box;
-  width: 700px;
+  width: 800px;
+  height: 100%;
+  padding: 0 10px;
+
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   border-bottom: solid 1px black;
-  margin: 50px auto;
-  padding: 10px;
-  cursor: pointer;
-  .bold {
-    font-weight: 500;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 8px;
   }
-  .ad {
-    border: solid 2px blue;
+
+  &::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #84a5c886;
+
+    border-radius: 10px;
   }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1);
+  }
+
   img {
     width: 50px;
     height: 50px;
     object-fit: cover;
   }
-  .comment {
-    text-align: right;
-  }
 `;
 
 const TextBox = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   padding: 5px;
