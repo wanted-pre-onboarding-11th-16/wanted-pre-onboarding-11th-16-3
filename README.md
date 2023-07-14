@@ -17,30 +17,30 @@ wanted 프리온보딩 3주차 과제입니다 🔥
 ```
 📦 src
 ├── apis
-|	├── index.ts
+| ├── index.ts
 | └── issue.ts
 ├── components
-|	├── common
-|	|		├── header
-|	|		├── layout
-|	|		└── loader
+| ├── common
+| |	├── header
+| |	├── layout
+| |	└── loader
 | └── main
-|	|		├── AD
-|	|		├── issueItem
-|	|		└── issueList
+| | ├── AD
+| | ├── issueItem
+| | └── issueList
 ├── constants
-|	├── img.ts
-|	├── issue.ts
-|	├── github.ts
+| ├── img.ts
+| ├── issue.ts
+| ├── github.ts
 | └── repo.ts
 ├── context
-|	├── issuesContext.tsx
+| ├── issuesContext.tsx
 | └── detailContext.tsx
 ├── hooks
 | └── useInfiniteScroll.tsx
 ├── pages
-|	├── Main.tsx
-|	├── Detail.tsx
+| ├── Main.tsx
+| ├── Detail.tsx
 | └── Error.tsx
 ├── hooks
 | └── parseDate.tsx
