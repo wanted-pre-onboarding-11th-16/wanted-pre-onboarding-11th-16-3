@@ -1,6 +1,7 @@
-import { Issue, IssueDetail } from '@/types/issue';
-import { client } from '.';
 import { PER_PAGE, SORT } from '@/constants/issue';
+import { Issue, IssueDetail } from '@/types/issue';
+
+import { client } from '.';
 
 export const getIssues = async (params: { page: number }) => {
   const paramsWithOptions = { ...params, sort: SORT, per_page: PER_PAGE };
