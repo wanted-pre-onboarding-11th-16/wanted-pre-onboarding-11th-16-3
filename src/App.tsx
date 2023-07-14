@@ -1,5 +1,7 @@
+import Router from './Router';
+
 function App() {
-  return <div className="App">메인입니다.</div>;
+  return <Router />;
 }
 
 export default App;
