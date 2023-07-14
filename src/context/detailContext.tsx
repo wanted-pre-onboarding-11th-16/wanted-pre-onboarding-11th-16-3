@@ -1,7 +1,7 @@
 import { createContext, PropsWithChildren, useContext, useState } from 'react';
 
-import { getIssueDetail } from '../apis/issues';
-import { IssueDetail } from '../types/issue';
+import { getIssueDetail } from '@/apis/issues';
+import { IssueDetail } from '@/types/issue';
 
 const INITIAL_ISSUE_DETAIL = {
   number: 0,
