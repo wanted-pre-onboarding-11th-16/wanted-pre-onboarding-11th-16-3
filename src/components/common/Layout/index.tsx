@@ -5,21 +5,26 @@ import Header from '@/components/common/Header';
 
 const Layout = (props: PropsWithChildren) => {
   return (
-    <Wrapper>
+    <>
       <Header />
-      <main>{props.children}</main>
-    </Wrapper>
+      <Wrapper>{props.children}</Wrapper>
+    </>
   );
 };
 
 export default Layout;
-const Wrapper = styled.div`
-  height: 100vh;
+
+const Wrapper = styled.section`
+  padding-top: 150px;
+  height: calc(100vh - 150px);
+
   background-color: rgb(245, 248, 250);
   color: black;
-  margin: auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  overflow-y: hidden;
 `;
