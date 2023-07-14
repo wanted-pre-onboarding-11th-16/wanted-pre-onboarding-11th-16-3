@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
+import { PATH } from '@/constants/path';
 import { Issue } from '@/types/issue';
 import { parseDate } from '@/utils/parseDate';
 
@@ -9,7 +10,7 @@ const IssueItem = (props: Issue) => {
   const navigate = useNavigate();
 
   const handleClickIssue = (id: number) => {
-    navigate(`/issues/${id}`);
+    navigate(`/${PATH.DETAIL}/${id}`);
   };
 
   return (

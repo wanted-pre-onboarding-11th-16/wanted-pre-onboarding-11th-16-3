@@ -8,7 +8,7 @@ const Router = () => {
   return (
     <Routes>
       <Route path={PATH.MAIN} element={<MainPage />} />
-      <Route path={PATH.DETAIL} element={<DetailPage />} />
+      <Route path={`${PATH.DETAIL}/:id`} element={<DetailPage />} />
       <Route path={PATH.ERROR_PAGE} />
     </Routes>
   );

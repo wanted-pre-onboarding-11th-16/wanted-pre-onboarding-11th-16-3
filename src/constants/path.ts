@@ -1,5 +1,5 @@
 export const PATH = {
   MAIN: '/',
-  DETAIL: 'issues/:id',
+  DETAIL: 'issues',
   ERROR_PAGE: '*',
 };
