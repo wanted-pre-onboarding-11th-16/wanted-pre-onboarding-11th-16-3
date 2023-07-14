@@ -9,6 +9,7 @@ const Router = () => {
     <Routes>
       <Route path={PATH.MAIN} element={<MainPage />} />
       <Route path={PATH.DETAIL} element={<DetailPage />} />
+      <Route path={PATH.ERROR_PAGE} />
     </Routes>
   );
 };

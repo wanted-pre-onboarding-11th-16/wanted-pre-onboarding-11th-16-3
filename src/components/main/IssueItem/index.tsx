@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
-import { Issue } from '../../../types/issue';
-import { parseDate } from '../../../utils/date';
+import { Issue } from '@/types/issue';
+import { parseDate } from '@/utils/parseDate';
 
 const IssueItem = (props: Issue) => {
   const { number, title, user, updated_at, comments } = props;
