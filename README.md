@@ -16,40 +16,37 @@ wanted 프리온보딩 3주차 과제입니다 🔥
 
 ```
 📦 src
-├── apis
-| ├── index.ts
-| └── issue.ts
-├── components
-| ├── common
-| |	├── header
-| |	├── layout
-| |	└── loader
-| └── main
-| | ├── AD
-| | ├── issueItem
-| | └── issueList
-├── constants
-| ├── img.ts
-| ├── issue.ts
-| ├── github.ts
-| └── repo.ts
-├── context
-| ├── issuesContext.tsx
-| └── detailContext.tsx
-├── hooks
-| └── useInfiniteScroll.tsx
-├── pages
-| ├── Main.tsx
-| ├── Detail.tsx
-| └── Error.tsx
-├── hooks
-| └── parseDate.tsx
-├── styles
-├── types
-| └── issue.ts
-├── App.tsx
-├── index.tsx
-└── Router.tsx
+    +---apis
+    +---components
+    |   +---common
+    |   |   +---Header
+    |   |   +---Layout
+    |   |   \---Loader
+    |   \---main
+    |       +---Ad
+    |       +---IssueItem
+    |       \---IssueList
+    +---constants
+    |       img.ts
+    |       issue.ts
+    |       path.ts
+    |       repo.ts
+    +---context
+    |       detailContext.tsx
+    |       IssuesContext.tsx
+    +---hooks
+    |       useInfiniteScroll.tsx
+    +---pages
+    |   +---detail
+    |   \---main
+    +---types
+    |       issue.ts
+    |---utils
+    |       parseDate.ts
+    |
+    |   App.tsx
+    |   index.tsx
+    \   Router.tsx
 ```
 
 ## **Team 16 팀원 소개**
