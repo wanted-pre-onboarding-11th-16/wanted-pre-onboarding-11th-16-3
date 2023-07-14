@@ -2,20 +2,28 @@ import styled from '@emotion/styled';
 
 const Ad = ({ keyIdx, imgSrc }: { keyIdx: number; imgSrc: string }) => {
   return (
-    <Container>
-      <div key={`ad-${keyIdx}`}>
+    <ImgList key={`ad-${keyIdx}`}>
+      <a href="https://www.wanted.co.kr/" target="_blank" rel="noreferrer">
         <img className="img" src={imgSrc} alt="ad" />
-      </div>
-    </Container>
+      </a>
+    </ImgList>
   );
 };
 
 export default Ad;
 
-const Container = styled.div`
-  align-items: center;
-  min-width: 700px;
-  .img {
-    min-width: 100px;
+const ImgList = styled.li`
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 800px;
+    padding: 20px 0;
+  }
+
+  img {
+    width: 50%;
+    object-fit: contain;
   }
 `;

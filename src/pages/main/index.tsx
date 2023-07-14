@@ -15,10 +15,7 @@ const MainPage = () => {
   return (
     <Layout>
       <Container>
-        <h1>Issue List</h1>
-        <TextBox>
-          <IssueList issues={issues} />
-        </TextBox>
+        <IssueList issues={issues} />
       </Container>
     </Layout>
   );
@@ -27,39 +24,28 @@ const MainPage = () => {
 export default MainPage;
 
 const Container = styled.div`
-  box-sizing: border-box;
-  width: 700px;
+  width: 800px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: solid 1px black;
-  margin: 50px auto;
-  padding: 50px;
-  cursor: pointer;
-  .bold {
-    font-weight: 500;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 8px;
   }
-  .ad {
-    border: solid 2px blue;
+
+  &::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #84a5c886;
+
+    border-radius: 10px;
   }
-  img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-  }
-  .comment {
-    text-align: right;
+
+  &::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1);
   }
 `;
-
-const TextBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-  border-bottom: solid 1px black;
-`;
-
-// const Text = styled.span`
-//   box-sizing: border-box;
-//   margin: auto 5px;
-// `;
