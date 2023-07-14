@@ -23,27 +23,37 @@
     "plugin:import/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
-    "react-hooks/rules-of-hooks": "error",
+
+    "import/no-anonymous-default-export": "off",
+    "import/newline-after-import": "error",
+    "import/first": "error",
+    "import/no-unresolved": "off",
+
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "import/no-anonymous-default-export": 0,
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-    "comma-dangle": ["error", "always-multiline"],
-    "object-curly-spacing": ["error", "always"],
-    "space-in-parens": ["error", "never"],
-    "computed-property-spacing": ["error", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
-    "eol-last": ["error", "always"],
-    "quotes": ["error", "single"],
-    "no-tabs": ["error", { "allowIndentationTabs": true }],
-    "semi": ["error", "always"],
-    "object-shorthand": "error",
+
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    "prettier/prettier": "error",
+
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "eol-last": ["error", "always"], // 파일의 마지막에 줄바꿈을 넣을 것인가?
+    "comma-dangle": ["error", "always-multiline"], // 후행쉼표
+    "object-curly-spacing": ["error", "always"], // 중괄호 앞뒤의 공백 여부
+    "space-in-parens": ["error", "never"], // 소괄호 앞뒤의 공백 여부
+    "computed-property-spacing": ["error", "never"], // object의 key 부분에 공백 여부
+    "comma-spacing": ["error", { "before": false, "after": true }], // comma(,) 앞 뒤의 공백 여부
+    "quotes": ["error", "single"], // 홑따옴표 혹은 겹따옴표 사용 여부
+    "no-tabs": ["error", { "allowIndentationTabs": true }], // tab 사용 여부
+    "semi": ["error", "always"], // 세미콜론 사용 여부
+    "object-shorthand": "error", // es6에서 객체를 간편하게 사용하는 문법
+
+    // blankline을 삽입하는 기준
     "padding-line-between-statements": [
       "error",
-      { "blankLine": "always", "prev": "*", "next": "return" },
-      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      { "blankLine": "always", "prev": "", "next": "return" },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "" },
       {
         "blankLine": "any",
         "prev": ["const", "let", "var"],
@@ -54,8 +64,10 @@
   "settings": {
     "import/resolver": {
       "typescript": {}
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     }
   },
-
   "ignorePatterns": ["node_modules/"]
 }
