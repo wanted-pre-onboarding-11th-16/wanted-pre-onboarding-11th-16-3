@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# 🌱 프리온보딩 프론트엔드 과제 Week 3 TEAM 16
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+wanted 프리온보딩 3주차 과제입니다 🔥
 
-## Available Scripts
+## 배포 페이지
 
-In the project directory, you can run:
+🎉 Team16 배포 링크 👇
 
-### `npm start`
+## 🛠️ 사용 라이브러리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- formatter : Eslint, Prettier
+- API : Axios
+- Style : Emotion
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 디렉토리 구조
 
-### `npm test`
+```
+📦 src
+├── apis
+|	├── index.ts
+| └── issue.ts
+├── components
+|	├── common
+|	|		├── header
+|	|		├── layout
+|	|		└── loader
+| └── main
+|	|		├── AD
+|	|		├── issueItem
+|	|		└── issueList
+├── constants
+|	├── img.ts
+|	├── issue.ts
+|	├── github.ts
+| └── repo.ts
+├── context
+|	├── issuesContext.tsx
+| └── detailContext.tsx
+├── hooks
+| └── useInfiniteScroll.tsx
+├── pages
+|	├── Main.tsx
+|	├── Detail.tsx
+| └── Error.tsx
+├── hooks
+| └── parseDate.tsx
+├── styles
+├── types
+| └── issue.ts
+├── App.tsx
+├── index.tsx
+└── Router.tsx
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Team 16 팀원 소개**
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/scs0209"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/e237b4f3-26f3-4a37-8818-86787f5d858b" width="100px" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 창수 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jsdmas"><img src="https://avatars.githubusercontent.com/u/105098581?s=400&v=4" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 진호</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/seongminn"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/3fdd5b88-e4ba-412b-a89e-b71694c153f7" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 성민</b></sub></a><br /></td>
+     <tr/>
+      <td align="center"><a href="https://github.com/sjerry-kim"><img src="https://github.com/sjerry-kim/Portfolio_Academy_ARCO/assets/112137364/23130bde-b5ff-48c3-bfd9-45a1e8bebe07" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♀️ FE 팀장 : 진혜</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/seunghowhite"><img src="https://avatars.githubusercontent.com/u/105100315?v=4" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 승호</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jioneee"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/11d05a3a-57b2-4ae0-96b3-747b557ff6be" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♀️ FE 팀원 : 지원</b></sub></a><br /></td>
+    </tr>
+  </tbody>
+</table>
