@@ -19,10 +19,10 @@ const IssueList = ({ issues: issueList }: { issues: Issue[] }) => {
       {issueList.map((issue, idx) => (
         <Fragment key={issue.number}>
           <IssueItem {...issue} />
-          {idx % 5 === 4 && <Ad keyIdx={idx} imgSrc={IMG_SRC} />}
+          {idx % 4 === 3 && <Ad keyIdx={idx} imgSrc={IMG_SRC} />}
         </Fragment>
       ))}
-      <div ref={target}></div>
+      <div ref={target} style={{ height: '1rem' }}></div>
       {loading && <Loader className="short" />}
     </ul>
   );
