@@ -47,19 +47,9 @@
     "quotes": ["error", "single"], // 홑따옴표 혹은 겹따옴표 사용 여부
     "no-tabs": ["error", { "allowIndentationTabs": true }], // tab 사용 여부
     "semi": ["error", "always"], // 세미콜론 사용 여부
-    "object-shorthand": "error", // es6에서 객체를 간편하게 사용하는 문법
+    "object-shorthand": "error" // es6에서 객체를 간편하게 사용하는 문법
 
     // blankline을 삽입하는 기준
-    "padding-line-between-statements": [
-      "error",
-      { "blankLine": "always", "prev": "", "next": "return" },
-      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "" },
-      {
-        "blankLine": "any",
-        "prev": ["const", "let", "var"],
-        "next": ["const", "let", "var"]
-      }
-    ]
   },
   "settings": {
     "import/resolver": {
