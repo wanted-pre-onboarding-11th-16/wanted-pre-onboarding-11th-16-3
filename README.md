@@ -158,7 +158,7 @@ git commit message 컨벤션
 ### api 데이터 가공 이슈
 
 - 과제 ‘다섯번째 셀마다 광고 이미지 출력’ 요구 사항 수행을 위해, 받아온 issueList 데이터 배열에 광고 이미지를 삽입(가공)하여 mapping할지, 혹은 mapping할 시 광고 이미지를 삽입할지에 대해 토론함.
-- 가공 이후 mapping을 하게 된다면 추후 issueList를 사용할 시 다양한 문제들이 발생할 수 있다는 점에서 데이터 활용성을 저하한다는 점에 의해 받아온 issueList 데이터를 가공하지 않고 mapping 시 광고를 삽입하기로 함.
+- 가공 이후 mapping을 하게 된다면 추후 issueList를 사용할 시 다양한 문제들이 발생할 수 있 데이터 활용성을 저하한다는 점에 의해 받아온 issueList 데이터를 가공하지 않고 mapping 시 광고를 삽입하기로 함.
 
 ### eslint plugin
 
