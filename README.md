@@ -17,6 +17,8 @@ wanted 프리온보딩 3주차 과제입니다 🔥
 ```
 📦 src
     +---apis
+    |    index.ts
+    |    issues.ts
     +---components
     |   +---common
     |   |   +---Header
