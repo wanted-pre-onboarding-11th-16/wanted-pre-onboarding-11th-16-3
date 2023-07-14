@@ -14,7 +14,7 @@ export const IssuesContext = createContext<{
 export const useIssues = () => {
   const issueContext = useContext(IssuesContext);
 
-  if (!issueContext) throw new Error('새로고침 해주세요!');
+  if (!issueContext) throw new Error('Issue Provider를 찾을 수가 없어요!');
 
   return issueContext;
 };

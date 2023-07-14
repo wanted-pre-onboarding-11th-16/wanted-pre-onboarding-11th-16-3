@@ -25,7 +25,7 @@ export const IssueDetailContext = createContext<{
 export const useIssueDetail = () => {
   const issueDetail = useContext(IssueDetailContext);
 
-  if (!issueDetail) throw new Error('새로고침 해주세요!');
+  if (!issueDetail) throw new Error('Issue Detail Provider를 찾을 수가 없어요!');
 
   return issueDetail;
 };
