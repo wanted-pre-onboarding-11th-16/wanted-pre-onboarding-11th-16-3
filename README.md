@@ -8,11 +8,62 @@ wanted 프리온보딩 3주차 과제입니다 🔥
 
 https://wanted-pre-onboarding-11th-16-3.vercel.app/
 
-## 🛠️ 사용 라이브러리
+## 😊 팀 소개
 
-- formatter : Eslint, Prettier
-- API : Axios
-- Style : Emotion
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/scs0209"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/e237b4f3-26f3-4a37-8818-86787f5d858b" width="100px" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 창수 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jsdmas"><img src="https://avatars.githubusercontent.com/u/105098581?s=400&v=4" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 진호</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/seongminn"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/3fdd5b88-e4ba-412b-a89e-b71694c153f7" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 성민</b></sub></a><br /></td>
+     <tr/>
+      <td align="center"><a href="https://github.com/sjerry-kim"><img src="https://github.com/sjerry-kim/Portfolio_Academy_ARCO/assets/112137364/23130bde-b5ff-48c3-bfd9-45a1e8bebe07" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♀️ FE 팀장 : 진혜</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/seunghowhite"><img src="https://avatars.githubusercontent.com/u/105100315?v=4" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 승호</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jioneee"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/11d05a3a-57b2-4ae0-96b3-747b557ff6be" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♀️ FE 팀원 : 지원</b></sub></a><br /></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## 🔧 설치 및 실행
+
+### 깃 클론 및 설치 경로 이동
+
+```
+git clone https://github.com/wanted-pre-onboarding-11th-16/wanted-pre-onboarding-11th-16-3.git
+cd wanted-pre-onboarding-11th-16-3
+```
+
+### 설치
+
+```
+npm install
+```
+
+### 환경변수 설정
+
+```
+REACT_APP_GITHUB_TOKEN = YOUR TOKEN
+REACT_APP_BASE_URL = https://api.github.com/repos/
+```
+
+### 실행
+
+```
+npm run start
+```
+
+---
+
+## 🛠️ 사용 라이브러리 및 스택
+
+- formatter : ![Eslint](https://img.shields.io/badge/Eslint-blue), ![Prettier](https://img.shields.io/badge/Prettier-pink)
+- API : ![Axios](https://img.shields.io/badge/Axios-yellow)
+- Style : ![Emotion](https://img.shields.io/badge/Emotion-green)
+- Language: ![React](https://img.shields.io/badge/React-61DAFB?logo=React&logoColor=white), ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=TypeScript&logoColor=white)
+
+---
 
 ## 디렉토리 구조
 
@@ -58,6 +109,22 @@ https://wanted-pre-onboarding-11th-16-3.vercel.app/
 - **context**: 전역 상태 관리와 여러 컴포넌트에서 데이터를 쉽게 `전달`하도록 만들었습니다.
 - **hooks** & **util** : 로직을 추상화하여 `재사용 가능한 한형태`로 분리하여 개발 `생산성 향상`시켰습니다.
 
+---
+
+## ❤ 팀 코드 컨벤션
+
+git commit message 컨벤션
+| 커밋 유형 | 의미 |
+|-----------|--------------------------------------------------|
+| feat | 새로운 기능 추가 |
+| fix | 버그, 기능 수정 |
+| Docs | 문서 수정 |
+| style | 스타일 코드 추가 |
+| refactor | 코드 리팩토링 |
+| chore | 기능과 관련 없는 내용 수정 |
+
+---
+
 ## 🗣️ Best Practice 선정 과정(종합 의견)
 
 ### Redux vs ContextAPI
@@ -90,6 +157,7 @@ https://wanted-pre-onboarding-11th-16-3.vercel.app/
 
 ### eslint plugin
 
+```
 - `eslint-config-prettier`: eslint의 formatting 기능을 없애준다.
 - `eslint-plugin-prettier`: eslint가 prettier 포맷팅 기능을 사용하도록 하는 패키지
 - `eslint-plugin-react`: eslint가 react 문법을 알 수 있게 해주는 패키지
@@ -99,19 +167,6 @@ https://wanted-pre-onboarding-11th-16-3.vercel.app/
 - `eslint-plugin-import`, `eslint-plugin-simple-import-sort`: import, export 순서를 정렬해주는 패키지
 - `@typescript-eslint/eslint-plugin`: typescript가 eslint에서 호환되도록 하는 패키지
 - `@typescript-eslint/parser`: typescript를 파싱하도록 도와주는 패키지
+```
 
 ---
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href="https://github.com/scs0209"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/e237b4f3-26f3-4a37-8818-86787f5d858b" width="100px" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 창수 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/jsdmas"><img src="https://avatars.githubusercontent.com/u/105098581?s=400&v=4" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 진호</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/seongminn"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/3fdd5b88-e4ba-412b-a89e-b71694c153f7" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 성민</b></sub></a><br /></td>
-     <tr/>
-      <td align="center"><a href="https://github.com/sjerry-kim"><img src="https://github.com/sjerry-kim/Portfolio_Academy_ARCO/assets/112137364/23130bde-b5ff-48c3-bfd9-45a1e8bebe07" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♀️ FE 팀장 : 진혜</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/seunghowhite"><img src="https://avatars.githubusercontent.com/u/105100315?v=4" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♂️ FE 팀원 : 승호</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/jioneee"><img src="https://github.com/jsdmas/jsdmas.github.io/assets/105098581/11d05a3a-57b2-4ae0-96b3-747b557ff6be" width="100px;" alt=""/><br /><sub><b>🙎🏻‍♀️ FE 팀원 : 지원</b></sub></a><br /></td>
-    </tr>
-  </tbody>
-</table>
