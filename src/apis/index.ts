@@ -13,3 +13,10 @@ export const client = axios.create({
     'X-GitHub-Api-Version': '2022-11-28',
   },
 });
+
+client.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    return Promise.reject(error);
+  },
+);
